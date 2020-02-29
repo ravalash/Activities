@@ -1,0 +1,40 @@
+.fixed{
+    text-align: center;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: lightgrey;
+    width:200px;
+    height:130px;
+    padding-top:20px;
+}
+
+
+h1{
+    text-align:left;
+}
+
+.main{
+    position:relative;
+    left:33%;
+    width:33%;
+
+}
+
+.relative{
+    position:relative;
+    text-align:center;
+    background-color: lightgrey;
+    height: 160px;
+    padding-top: 50px;
+}
+
+.absolute{
+    position: absolute;
+    bottom:0;
+    right:0;
+    background-color:slategrey;
+    height:100px;
+    width:200px;
+    padding-top:20px;
+}
