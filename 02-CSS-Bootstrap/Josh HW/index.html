@@ -1,0 +1,170 @@
+Skip to content
+Why GitHub? 
+Enterprise
+Explore 
+Marketplace
+Pricing 
+Search
+
+Sign in
+Sign up
+jbenj-upenn
+/
+CodingHomeworkWeek2_2.0
+100
+ Code Issues 0 Pull requests 0 Actions Projects 0 Security Insights
+Join GitHub today
+GitHub is home to over 40 million developers working together to host and review code, manage projects, and build software together.
+
+CodingHomeworkWeek2_2.0/index.html
+@jbenj-upenn jbenj-upenn working mostly on CSS and trying to get my grids to work, to no avail…
+deb867d 10 minutes ago
+132 lines (100 sloc)  5.46 KB
+  
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS taken from the Getting Started page-->
+        <title>Josh Benjamin Portfolio</title>
+
+    <!--Not at all sure if I need a style.css file here, given the Bootstrap link, but I think I've seen both done here before-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    </head>
+
+<!--Playing around with the NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <span class="navbar-brand mb-1 h1">Navbar</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.elp.upenn.edu/faculty/joshua-benjamin">Professor Profile at UPenn</a>
+            </li>
+
+            <li class="nav-item dropdown">
+            
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Social Media Contacts
+                </a>
+            <!--created a dropdown menu, added social media contacts-->
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/joshua-benjamin-046a7196/">LinkedIn</a>
+                    <a class="dropdown-item" href="https://www.instagram.com/joshua7david/">Instagram</a>
+                    <a class="dropdown-item" href="https://www.facebook.com/joshua.benjamin.311">Facebook</a>
+                    <a class="dropdown-item" href="https://twitter.com/JoshuaDBenjamin">Twitter</a>
+                    
+                </div>
+            
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+
+
+
+
+    <header>
+
+        <!--I'm not at all sure how the grids aren't coming out as I want them. I don't know if it has something to do with 
+        having the two CSSs up in the Head section or something that I don't know about either flexbot (which is approximately nothing)
+    or floats and clears (also approximately nothing)-->
+    
+    <div class="row">
+
+        <div class="col-md-3" style="background-color: slategrey;">
+            
+            <h1>Joshua Benjamin</h1>
+            <h2>Professional Porfolio</h2>
+            <div class="frame">
+                <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG_jPjf-1FWJw/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=G_E12tkrasIqxMoNVu7L8_HYDEsTDZwxdq9Jb9GvlcU" alt="Josh Benjamin">;
+            </div>
+        </div>
+        <div class="col-md-3"style="background-color: slategrey;">   
+       
+            <h2>The Quick Rundown</h2>
+        
+            <p>My name is <strong></strong>Josh Benjamin, and I am ecstatic to be here learning this valuable, challenging material.
+                I hope we can all be of mutual help to one another as we go through this 6-month bootcamp journey together!
+                <br><br>
+                I am presently a professor at Drexel and the University of Pennsylvania. In both universities, I am in the
+                English
+                department, having obtained my undergrad degree in Advanced Linguistics and my Master's in TESL (essentially,
+                teaching English to non-native English speakers).
+                <br><br>
+                On the side, I occassionally bartend and play poker competitively.
+                Additionally, one of my hobbies--graffiti art--has become another way for me to earn income, as I use it to do
+                commissioned artwork in a variety of locations.
+                <br><br>
+                I wish all the best to my current classmates/future coders as we get into this! Let's do this.
+            </p>
+
+        </div>
+    </div>
+      
+    </header>
+
+
+<aside>
+
+    <div id="main-bio">  
+
+        
+
+    </div>
+
+</aside>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

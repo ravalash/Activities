@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var ties = 0;
+        var wins = 0;
+        var losses = 0;
+        var compChoices = ["r", "p", "s"];
+
+        for (var plays = 0; plays < 10; plays++) {
+            var playerChoice = prompt("Enter r, p, or s to play");
+            if (playerChoice !== "r" && playerChoice !== "p" && playerChoice !== "s") {
+                alert("Invalid choice made! Please choose either r, p, or s");
+                plays--
+            }
+            else {
+                var compRoll = Math.floor(Math.random() * 3);
+                var compChoice = compChoices[compRoll];
+
+                if (playerChoice === compChoice) {
+                    ties = ties + 1;
+                    alert("You chose " + playerChoice + ". I chose " + compChoice + ". It's a tie!!!");
+                }
+                else if ((playerChoice === "r" && compChoice === "s") || (playerChoice === "s" && compChoice === "p") || (playerChoice === "p" && compChoice === "r")) {
+                    wins = wins + 1;
+                    alert("You chose " + playerChoice + ". I chose " + compChoice + ". You win!!!");
+                }
+                else {
+                    losses = losses + 1;
+                    alert("You chose " + playerChoice + ". I chose " + compChoice + ". You lost!!!");
+                }
+
+
+                alert("Your current score is " + wins + " wins and " + losses + " losses and " + ties + " ties. Total games played: " + parseInt(plays + 1));
+
+            }
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
